@@ -1,0 +1,50 @@
+/* Container */
+.container {
+    max-width: 1029px;
+    /* margin: 0 auto;  */
+    /* padding: 0 10px;  */
+}
+
+/* Section Headers with Adjustable Top Spacing */
+.sec-header {
+    position: relative;
+}
+
+.sec-header1 { top: 0; }    
+.sec-header2 { top: 30px; }
+.sec-header3 { top: 50px; }
+.sec-header4 { top: 70px; }
+.sec-header5 { top: 80px; }
+.sec-header6 { top: 100px; }
+.sec-header7 { top: 120px; }
+.sec-header8 { top: 130px; }
+.sec-header9 { top: 160px; }
+
+/* Image Styling */
+.sec-image {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1280px; /* Increase container width on larger screens */
+    }
+}
+
+/* Media Query for Tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .container {
+        max-width: 1024px; /* Keep the default container width */
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 720px) {
+    .container {
+        max-width: 100%; /* Container takes full width on mobile */
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+}
